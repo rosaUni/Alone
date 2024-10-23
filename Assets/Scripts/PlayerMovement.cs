@@ -55,10 +55,11 @@ public class PlayerMovement : Subject
     //player rotation in its own axis
     private void playerRotate()
     {
+        /*
         // - to rotate player as the same time as the camera
         Quaternion toRotate = Quaternion.LookRotation(cameraTransform.forward, Vector3.up);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotate, P_rotationSpeed * Time.deltaTime);
-            
+
         // - to rotate player when moving
         /*if (vec_move != Vector3.zero)
         {
@@ -112,7 +113,7 @@ public class PlayerMovement : Subject
         vec_move = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector3.up) * vec_move;
 
         // update x,z velocity
-        playerRotate();
+        //playerRotate();
 
         if (!Input.GetKey(KeyCode.LeftShift))
         {
