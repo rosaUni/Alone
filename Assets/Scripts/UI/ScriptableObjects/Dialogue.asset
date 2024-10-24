@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   theme: {fileID: 11400000, guid: 8b4041a6eeca3624593fee97d4326fc1, type: 2}
-  font: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  font: {fileID: 11400000, guid: aa358107a1ef26642a8ca79224594b85, type: 2}
   size: 100

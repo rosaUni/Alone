@@ -51,7 +51,10 @@ public class NPCDeadState : NPCBaseState
     }
     public override void UpdateState(NPC npc)
     {
-
+        if(npc.transform.position.y < 0.5 && npc.rb.constraints == RigidbodyConstraints.None)
+        {
+            npc.Wait(3);
+        }
     }
 }
 
@@ -75,3 +78,4 @@ public class NPCHidingState : NPCBaseState
         }
     }
 }   
+

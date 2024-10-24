@@ -42,4 +42,17 @@ public abstract class NPC : MonoBehaviour, IObserver
     {
         return _playerSubject;
     }
+
+    // COROUTINE
+    public void Wait(int seconds)
+    {
+        StartCoroutine(WaitAndFreeze(seconds));
+    }
+
+    IEnumerator WaitAndFreeze(int seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        rb.constraints = RigidbodyConstraints.FreezeAll;
+
+    }
 }
