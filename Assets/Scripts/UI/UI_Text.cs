@@ -16,9 +16,11 @@ public class UI_Text : UI_CustomComponent
     }
     public override void Configure()
     {
-        textMeshProUGUI.color = textData.theme.GetTextColor(style); 
-        textMeshProUGUI.font = textData.font;
-        textMeshProUGUI.fontSize = textData.size;
-
+        /*if(textData != null)
+        {
+            textMeshProUGUI.color = textData.theme.GetTextColor(style); 
+            textMeshProUGUI.font = textData.font;
+            textMeshProUGUI.fontSize = textData.size;
+        }*/
     }
 }

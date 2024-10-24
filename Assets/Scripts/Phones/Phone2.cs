@@ -1,11 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class Phone2 : Phone
 {
-    Subject _player;
     public override void OnNotify(PlayerActions action)
     {
         switch (action)
